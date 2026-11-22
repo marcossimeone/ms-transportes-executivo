@@ -135,6 +135,50 @@ header .brand small{color:#e5d5b6}
 .vehicle-premium-bottom p{font-family:var(--serif);font-size:24px;color:#e5e0d5;margin:0}
 @media(max-width:850px){.vehicle-premium-heading{display:block}.vehicle-premium-heading>p{margin-top:20px;max-width:600px}.vehicle-premium-features{grid-template-columns:repeat(2,minmax(0,1fr))}.vehicle-premium-features article:nth-child(2){border-right:0}.vehicle-premium-features article:nth-child(-n+2){border-bottom:1px solid rgba(224,197,142,.2)}}
 @media(max-width:520px){.vehicle-premium{padding:72px 0}.vehicle-premium-visual{height:360px;background-position:57% center}.vehicle-premium-label{left:12px;top:12px;padding:11px 12px}.vehicle-premium-label strong{font-size:16px}.vehicle-visual-caption{left:12px;bottom:12px;font-size:9px}.vehicle-premium-features article{padding:20px 14px}.vehicle-premium-features h3{font-size:19px}.vehicle-premium-features p{font-size:11px}.vehicle-premium-bottom{align-items:start;flex-direction:column}.vehicle-premium-bottom p{font-size:21px}}
+
+/* Ajuste mobile exclusivo — mantém o desktop aprovado */
+@media (max-width:800px){
+ html{scroll-padding-top:72px}
+ header .nav{height:68px!important;gap:10px;justify-content:space-between}
+ header .brand{min-width:0;gap:9px;letter-spacing:.07em;flex:1}
+ header .monogram{width:35px;height:35px;min-width:35px;font-size:19px}
+ header .brand strong{font-size:clamp(10px,2.65vw,13px);letter-spacing:.1em;white-space:nowrap}
+ header .brand small{font-size:8px;letter-spacing:.09em;white-space:nowrap}
+ header .nav-cta{margin:0;padding:10px 9px;font-size:8px;letter-spacing:.03em;white-space:nowrap}
+ header .menu{font-size:25px;line-height:1;padding:5px;flex-shrink:0}
+ .hero{display:block!important;min-height:0!important;height:auto!important;overflow:hidden;background-position:64% top;background-size:auto 650px;background-repeat:no-repeat;background-color:#101316;padding:0!important}
+ .hero:before{background:linear-gradient(180deg,rgba(7,11,15,.87) 0%,rgba(7,11,15,.62) 24%,rgba(7,11,15,.35) 42%,#101316 650px)!important}
+ .hero>.wrap{position:relative;z-index:2;width:calc(100% - 36px);max-width:620px}
+ .hero-content{padding-top:112px!important;padding-bottom:38px;max-width:100%!important}
+ .hero .eyebrow{font-size:9px;letter-spacing:.16em;line-height:1.6;margin-bottom:18px}
+ .hero h1{font-size:clamp(35px,8.5vw,58px)!important;line-height:1.03;letter-spacing:-.04em;margin-bottom:20px;overflow-wrap:normal}
+ .hero h1 em{overflow-wrap:anywhere}
+ .hero p{font-size:14px!important;line-height:1.65;max-width:440px;margin-bottom:24px}
+ .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .hero-actions .btn,.hero-actions .btn-outline{padding:13px 8px;min-width:0;font-size:10px;text-align:center;letter-spacing:.02em;white-space:normal}
+ .hero-note{margin-top:25px;gap:10px 17px;font-size:9px;line-height:1.5}
+ .hero-conversations{position:relative!important;inset:auto!important;z-index:3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:calc(100% - 36px);max-width:620px;margin:0 auto;padding:14px 0 36px;pointer-events:none}
+ .hero-conversations .chat-bubble,.hero-conversations .chat-bubble--one,.hero-conversations .chat-bubble--two,.hero-conversations .chat-bubble--three,.hero-conversations .chat-bubble--four,.hero-conversations .chat-bubble--five{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;width:100%!important;max-width:none!important;box-sizing:border-box;padding:12px!important;min-width:0;animation:msChatRise .65s ease-out both;animation-delay:var(--delay)}
+ .hero-conversations .chat-bubble p{font-size:11px!important;line-height:1.5;overflow-wrap:break-word}
+ .hero-conversations .chat-bubble small{font-size:9px}
+ .hero-conversations .chat-bubble:last-child{grid-column:1/-1;max-width:calc(50% - 5px)!important;justify-self:center}
+ .hero-conversations:after{display:none!important}
+}
+@media (max-width:480px){
+ header .nav-cta{display:none!important}
+ header .brand strong{font-size:12px}
+ header .brand small{font-size:8px}
+ .hero{background-size:auto 580px;background-position:62% top}
+ .hero:before{background:linear-gradient(180deg,rgba(7,11,15,.88) 0%,rgba(7,11,15,.64) 27%,rgba(7,11,15,.38) 49%,#101316 580px)!important}
+ .hero h1{font-size:clamp(32px,9vw,43px)!important}
+ .hero-actions{grid-template-columns:1fr 1fr}
+ .hero-conversations{grid-template-columns:1fr;gap:11px}
+ .hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{max-width:88%!important;width:88%!important;grid-column:auto;justify-self:start}
+ .hero-conversations .chat-bubble:nth-child(even){justify-self:end}
+ .hero-conversations .chat-bubble p{font-size:12px!important}
+}
+@media (max-width:360px){.hero h1{font-size:31px!important}.hero-actions{grid-template-columns:1fr}.hero .eyebrow{font-size:8px}header .brand strong{font-size:10px}}
+
 </style>
 </head>
 <body>
