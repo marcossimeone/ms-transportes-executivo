@@ -303,3 +303,9 @@ gap:8px!important;
 
 /* Navegação por âncoras com cabeçalho fixo e contato acessível */
 #inicio,#servicos,#motorista,#veiculo,#seguranca,#orcamento{scroll-margin-top:96px}.contact-details a{display:inline-block;color:inherit;text-decoration:none}.contact-details a:hover,.contact-details a:focus-visible{color:#e0c58e;text-decoration:underline;text-underline-offset:3px}@media(max-width:800px){#inicio,#servicos,#motorista,#veiculo,#seguranca,#orcamento{scroll-margin-top:82px}}
+
+/* Contraste reforçado nas seções claras (auditoria Lighthouse mobile) */
+.services .section-kicker,.services .service-number{color:#68502c}
+.services .section-lead,.services .service p{color:#444a4c}
+.services .service-action,.services .service-arrow{color:#664a22}
+.services .service-action:hover,.services .service-action:focus-visible{color:#3f2d14}
