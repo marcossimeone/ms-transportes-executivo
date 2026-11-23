@@ -307,8 +307,7 @@ gap:8px!important;
 /* Contraste reforçado nas seções claras (auditoria Lighthouse mobile) */
 .services .section-kicker,.services .service-number{color:#68502c}
 .services .section-lead,.services .service p{color:#444a4c}
-.services .service-action,.services .service-arrow{color:#664a22}
-.services .service-action:hover,.services .service-action:focus-visible{color:#3f2d14}
+.services .service-arrow{color:#664a22}
 
 /* Lighthouse: contraste dos textos pequenos em fundos claros */
 .services .section-kicker,.services .service-number{color:#654b26!important}
@@ -319,3 +318,7 @@ gap:8px!important;
 
 /* Acessibilidade: pular diretamente ao conteúdo sem mudar layout */
 .skip-to-content{position:fixed;left:12px;top:-90px;z-index:999999;padding:12px 18px;border:2px solid #101316;background:#e0c58e;color:#101316;font-weight:700;border-radius:5px;transition:top .12s}.skip-to-content:focus{top:12px;outline:3px solid #fff;outline-offset:2px}.ms-related-links .ms-current-page{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid rgba(199,166,106,.45);border-radius:6px;color:#c5c5c5;font-weight:600;line-height:1.35;background:rgba(255,255,255,.04)}@media(max-width:650px){.ms-related-links .ms-current-page{width:100%}}
+
+/* Contraste WCAG: CTA dos serviços sobre fundo escuro e no hover dourado */
+.services .service .service-action{background:#171c20;color:#fff!important;border-color:#171c20}
+.services .service .service-action:hover,.services .service .service-action:focus-visible{background:#e0c58e;color:#171c20!important;border-color:#e0c58e}
