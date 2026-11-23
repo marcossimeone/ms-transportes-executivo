@@ -184,3 +184,42 @@ header .brand small{color:#e5d5b6}
 @media(min-width:801px) and (max-width:1100px){.hero-conversations{right:0!important;width:190px!important}.hero-conversations .chat-bubble{width:180px!important}}
 @media(max-width:800px){.hero-conversations{position:relative!important;inset:auto!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;width:min(600px,calc(100% - 36px))!important;margin:0 auto 26px!important;transform:none!important}.hero-conversations .chat-bubble{position:relative!important;inset:auto!important;width:100%!important;max-width:none!important;grid-column:auto!important;justify-self:stretch!important}.hero-conversations .chat-bubble:last-child{grid-column:1/-1!important;max-width:calc(50% - 5px)!important;justify-self:center!important}.hero{min-height:unset!important;padding-bottom:26px!important}.hero .wrap{padding-bottom:440px!important}.hero-photo{bottom:280px!important}.hero-conversations:after{display:none!important}}
 @media(max-width:480px){.hero-conversations{grid-template-columns:1fr!important}.hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{width:88%!important;max-width:88%!important;grid-column:auto!important;justify-self:start!important}.hero-conversations .chat-bubble:nth-child(even){justify-self:end!important}.hero .wrap{padding-bottom:350px!important}.hero-photo{bottom:390px!important}}
+
+/* MS Transportes — ajustes de layout 23/11/2026 */
+/* Depoimentos alinhados horizontalmente, abaixo da área visual do carro */
+.hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;min-height:0!important;padding:0 0 36px!important;overflow:hidden}
+.hero>.wrap{position:relative!important;z-index:2!important;width:min(1160px,calc(100% - 48px))!important;min-height:690px!important;padding:0 0 30px!important;margin:0 auto!important}
+.hero .hero-content{padding-top:155px!important}
+.hero-photo{bottom:105px!important}
+.hero-conversations{position:relative!important;z-index:4!important;inset:auto!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important;align-items:stretch!important;width:min(1160px,calc(100% - 48px))!important;max-width:none!important;margin:0 auto!important;padding:0!important}
+.hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{position:relative!important;inset:auto!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;grid-column:auto!important;justify-self:stretch!important;width:100%!important;max-width:none!important;min-width:0!important;box-sizing:border-box!important;padding:13px!important;animation:msChatRise .65s ease-out both!important;animation-delay:var(--delay,0s)!important}
+.hero-conversations .chat-bubble p{font-size:11px!important;line-height:1.45!important;overflow-wrap:anywhere!important}
+.hero-conversations:after{display:none!important}
+/* Páginas internas: evitar grade duplicada que espreme texto e cartões */
+.internal-body>.wrap>.safety-grid,.internal-body>.wrap>.driver-grid{display:block!important;width:100%!important;margin:0!important}
+.internal-body .safety,.internal-body .driver{width:100%!important;padding:45px 0!important}
+.internal-body .safety>.wrap,.internal-body .driver>.wrap{width:100%!important;max-width:none!important;margin:0!important}
+.internal-body .safety>.safety-grid,.internal-body .driver>.driver-grid{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)!important;gap:clamp(24px,4vw,60px)!important;align-items:center!important}
+.internal-body .safety>.safety-grid{align-items:start!important}
+.internal-body .section-title{font-size:clamp(32px,3.7vw,50px)!important;overflow-wrap:normal!important}
+.internal-body .safety-list{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+.internal-body .safety-card{min-width:0!important}
+.internal-body .driver-image{height:auto!important;min-height:440px!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:visible!important}
+.internal-body .driver-image img{width:100%!important;height:auto!important;max-height:600px!important;object-fit:contain!important;object-position:center!important;opacity:1!important}
+@media(max-width:1000px){.hero-conversations{grid-template-columns:repeat(3,minmax(0,1fr))!important}.hero>.wrap{min-height:680px!important}}
+@media(max-width:800px){
+.hero>.wrap{width:calc(100% - 34px)!important;min-height:790px!important;padding:0 0 20px!important}
+.hero .hero-content{padding-top:130px!important}
+.hero-photo{bottom:25px!important}
+.hero-conversations{width:calc(100% - 34px)!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.hero-conversations .chat-bubble:last-child{grid-column:1/-1!important;max-width:calc(50% - 6px)!important;justify-self:center!important}
+.internal-body .safety>.safety-grid,.internal-body .driver>.driver-grid{grid-template-columns:1fr!important}
+.internal-body .driver-image{min-height:0!important}
+.internal-body .driver-image img{max-height:520px!important}
+}
+@media(max-width:480px){
+.hero>.wrap{min-height:800px!important}
+.hero-conversations{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;overflow-x:auto!important;scroll-snap-type:x mandatory!important;gap:10px!important;padding-bottom:14px!important}
+.hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{flex:0 0 min(78vw,270px)!important;max-width:none!important;width:auto!important;scroll-snap-align:start!important}
+.internal-body .safety-list{grid-template-columns:1fr!important}
+}
