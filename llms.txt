@@ -1,0 +1,19 @@
+# MS Transportes Executivo
+
+> Serviço de transporte executivo particular e transfer mediante agendamento e confirmação de disponibilidade, com atendimento na Região Metropolitana de São Paulo.
+
+## Páginas oficiais
+
+- [Página inicial](https://www.mstransporteexecutivo.com.br/): apresentação, contato e orçamento
+- [Serviços e transfer](https://www.mstransporteexecutivo.com.br/servicos): aeroportos, deslocamentos particulares e serviços executivos
+- [Motorista](https://www.mstransporteexecutivo.com.br/motorista): informações sobre Marcos Simeoni e o atendimento
+- [Veículo](https://www.mstransporteexecutivo.com.br/veiculo): informações sobre o veículo utilizado
+- [Segurança](https://www.mstransporteexecutivo.com.br/seguranca): cuidados e informações de segurança
+- [Sitemap](https://www.mstransporteexecutivo.com.br/sitemap.xml): mapa das páginas do site
+
+## Informações de atendimento
+
+- Área principal: Região Metropolitana de São Paulo, Brasil.
+- Atendimento 24 horas, mediante agendamento e confirmação de disponibilidade.
+- Orçamentos e confirmação de trajetos: consulte os canais de contato publicados no site oficial.
+- A disponibilidade, o preço e as condições de cada serviço devem ser confirmados diretamente com a empresa.
