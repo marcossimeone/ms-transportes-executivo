@@ -11,7 +11,8 @@ document.getElementById('quoteForm')?.addEventListener('submit',function(e){
     'Informações: ' + (d.get('detalhes') || 'Não informado')
   ].join('\n');
   const url = 'https://wa.me/5511981087323?text=' + encodeURIComponent(mensagem);
-  const janela = window.open(url,'_blank','noopener,noreferrer');
-  if(!janela) window.location.href = url;
+  const janela = window.open(url,'_blank');
+  if(janela) janela.opener = null;
+  else window.location.href = url;
 });
 window.addEventListener('scroll',function(){document.querySelector('header')?.classList.toggle('scrolled',window.scrollY>30)},{passive:true});
