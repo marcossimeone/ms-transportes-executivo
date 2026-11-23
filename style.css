@@ -309,3 +309,10 @@ gap:8px!important;
 .services .section-lead,.services .service p{color:#444a4c}
 .services .service-action,.services .service-arrow{color:#664a22}
 .services .service-action:hover,.services .service-action:focus-visible{color:#3f2d14}
+
+/* Lighthouse: contraste dos textos pequenos em fundos claros */
+.services .section-kicker,.services .service-number{color:#654b26!important}
+.services .section-lead,.services .service p{color:#404547!important}
+.services .service-arrow{color:#654b26!important}
+.safety .section-kicker{color:#71532c}
+.safety .section-lead,.safety-card p{color:#424849}
