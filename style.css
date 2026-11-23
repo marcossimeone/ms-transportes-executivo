@@ -67,7 +67,7 @@ body{font-weight:500}
 @media(max-width:420px){.hero{min-height:970px}.hero h1{font-size:44px}.hero-photo{bottom:95px;height:36%}.chat-bubble--one{bottom:31%}.chat-bubble--two{bottom:3%}}
 
 /* Integração visual do veículo com o cenário — versão 3 */
-.hero{background-image:linear-gradient(90deg,rgba(5,9,13,.54) 0%,rgba(5,9,13,.15) 48%,rgba(5,9,13,.06) 100%),url(assets/imagem-3.jpg);background-size:cover;background-position:center center;min-height:780px}
+.hero{background-image:linear-gradient(90deg,rgba(5,9,13,.54) 0%,rgba(5,9,13,.15) 48%,rgba(5,9,13,.06) 100%),url(assets/imagem-3.webp);background-size:cover;background-position:center center;min-height:780px}
 .hero:before{background:linear-gradient(90deg,rgba(6,10,13,.46),transparent 68%),linear-gradient(0deg,#101316 0%,transparent 19%)}
 .hero-content{max-width:660px}.hero h1{font-size:clamp(44px,5.3vw,76px);text-shadow:0 3px 25px rgba(0,0,0,.3)}
 .hero-photo{display:none!important}
