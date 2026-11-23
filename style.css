@@ -259,3 +259,29 @@ gap:8px!important;
 .hero-conversations{width:47vw!important}
 .hero-conversations .chat-bubble p{font-size:8px!important}
 }
+
+/* Responsividade dos depoimentos: quatro cartões, sem sobrepor carro ou título */
+@media(max-width:1099px){
+.hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;height:auto!important;min-height:0!important;padding:0 0 28px!important;overflow:hidden!important}
+.hero>.wrap{position:relative!important;z-index:3!important;width:min(100% - 36px,720px)!important;min-height:750px!important;padding:0 0 24px!important;margin:0 auto!important}
+.hero .hero-content{padding-top:125px!important;max-width:100%!important}
+.hero-conversations{position:relative!important;inset:auto!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;transform:none!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;width:min(100% - 36px,720px)!important;max-width:720px!important;margin:0 auto!important;padding:0!important;overflow:visible!important;pointer-events:none!important;z-index:5!important}
+.hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{position:relative!important;inset:auto!important;grid-column:auto!important;justify-self:stretch!important;flex:none!important;width:100%!important;max-width:none!important;min-width:0!important;height:auto!important;min-height:105px!important;margin:0!important;padding:12px!important;box-sizing:border-box!important;animation:msChatRise .8s ease-out both!important;animation-delay:var(--delay,0s)!important}
+.hero-conversations .chat-bubble:nth-child(n+5){display:none!important}
+.hero-conversations .chat-bubble p{font-size:11px!important;line-height:1.45!important;overflow-wrap:anywhere!important}
+.hero-conversations:after{display:none!important}
+}
+@media(max-width:600px){
+.hero>.wrap{min-height:760px!important;width:calc(100% - 30px)!important}
+.hero .hero-content{padding-top:112px!important}
+.hero h1{font-size:clamp(37px,9vw,52px)!important;line-height:1.04!important}
+.hero-photo{bottom:30px!important}
+.hero-conversations{width:calc(100% - 30px)!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;overflow:visible!important}
+.hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{flex:none!important;max-width:none!important;width:100%!important;min-height:125px!important;padding:10px!important}
+.hero-conversations .chat-bubble p{font-size:10px!important}
+}
+@media(max-width:380px){
+.hero>.wrap{min-height:790px!important}
+.hero-conversations{grid-template-columns:1fr!important}
+.hero-conversations .chat-bubble,.hero-conversations .chat-bubble:last-child{min-height:0!important}
+}
