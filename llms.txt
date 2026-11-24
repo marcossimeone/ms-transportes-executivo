@@ -1,6 +1,6 @@
 # MS Transportes Executivo
 
-> Serviço de transporte executivo particular e transfer mediante agendamento e confirmação de disponibilidade, com atendimento na Região Metropolitana de São Paulo.
+> Serviço de transporte executivo particular e transfer mediante agendamento e confirmação de disponibilidade, com atendimento na Região Metropolitana de São Paulo e viagens para Campinas, Santos, Sumaré e Cruzeiro.
 
 ## Páginas oficiais
 
@@ -14,6 +14,7 @@
 ## Informações de atendimento
 
 - Área principal: Região Metropolitana de São Paulo, Brasil.
+- Destinos adicionais: Campinas (Aeroporto de Viracopos), Santos (Porto de Santos e terminal de cruzeiros), Sumaré e Cruzeiro/SP (Vale do Paraíba).
 - Atendimento 24 horas, mediante agendamento e confirmação de disponibilidade.
 - Orçamentos e confirmação de trajetos: consulte os canais de contato publicados no site oficial.
 - A disponibilidade, o preço e as condições de cada serviço devem ser confirmados diretamente com a empresa.
